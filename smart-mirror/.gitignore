@@ -1,5 +1,13 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+/dictionaries/mariorobles.xml
+
+
 # Compiled output
 /dist
 /tmp
@@ -30,6 +38,9 @@ package-lock.json
 .history/*
 
 # Miscellaneous
+.angular
+.idea
+dist
 /.angular/cache
 .sass-cache/
 /connect.lock
