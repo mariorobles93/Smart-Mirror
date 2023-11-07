@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+
+/** Weather Icons https://erikflowers.github.io/weather-icons/
+Please refer to https://erikflowers.github.io/weather-icons/api-list.html
+for Open Weather Map API
+ **/
+@import "weather-icons/weather-icons.min.css";
+@import "weather-icons/weather-icons-wind.min.css";
