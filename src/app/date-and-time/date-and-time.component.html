@@ -1,0 +1,14 @@
+<div class="date-time">
+  <div class="time">
+    {{currentDate | date:'h:mm'}}
+    <div class="meridian-indicator">
+      {{currentDate | date:'a'}}
+    </div>
+  </div>
+  <div class="day">
+    {{currentDate | date:'EEEE'}}
+  </div>
+  <div class="date">
+    {{currentDate | date:'MMM d, y'}}
+  </div>
+</div>

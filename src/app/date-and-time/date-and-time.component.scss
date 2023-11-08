@@ -1,0 +1,30 @@
+.date-time {
+  float: right;
+  width: 300px;
+  font-size: 60pt;
+  padding-right: 10px;
+
+  .time {
+    display: flex;
+    justify-content: flex-end;
+
+    .meridian-indicator {
+      font-size: 20pt;
+      padding-left: 10px;
+      padding-top: 21px;
+    }
+  }
+
+  .day {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 40pt;
+  }
+
+  .date {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 27pt;
+
+  }
+}
