@@ -2,12 +2,12 @@
   "name": "smart-mirror",
   "version": "0.0.0",
   "scripts": {
-    "ng": "smart-mirror/node_modules/.bin/ng",
-    "start": "smart-mirror/node_modules/.bin/ng serve",
-    "build": "smart-mirror/node_modules/.bin/ng build",
-    "watch": "smart-mirror/node_modules/.bin/ng build --watch --configuration development",
-    "test": "smart-mirror/node_modules/.bin/ng test",
-    "test-coverage": "smart-mirror/node_modules/.bin/jest --selectProjects unit --coverage"
+    "ng": "node_modules/.bin/ng",
+    "start": "node_modules/.bin/ng serve",
+    "build": "node_modules/.bin/ng build",
+    "watch": "node_modules/.bin/ng build --watch --configuration development",
+    "test": "node_modules/.bin/ng test",
+    "test-coverage": "node_modules/.bin/jest --selectProjects unit --coverage"
   },
   "private": true,
   "dependencies": {
