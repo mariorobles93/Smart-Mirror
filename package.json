@@ -7,7 +7,7 @@
     "build": "node_modules/.bin/ng build",
     "watch": "node_modules/.bin/ng build --watch --configuration development",
     "test": "node_modules/.bin/ng test",
-    "test-coverage": "node_modules/.bin/jest --selectProjects unit --coverage"
+    "test-coverage": "node_modules/.bin/ng test --coverage"
   },
   "private": true,
   "dependencies": {

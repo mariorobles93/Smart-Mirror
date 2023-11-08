@@ -1,11 +1,16 @@
 // jest.config.ts
 
 module.exports = {
-    verbose: true,
+    roots: [
+        "<rootDir>/src"
+    ],
+    testMatch: [
+        "**/__tests__/**/*.+(ts|tsx|js)",
+        "**/?(*.)+(spec|test).+(ts|tsx|js)"
+    ],
     transform: {
-        "^.+\\.ts?$": "ts-jest",
+        "^.+\\.(ts|tsx)$": "ts-jest"
     },
-    moduleFileExtensions: ["ts", "js", "jsx", "json", "node"],
     collectCoverage: true,
     coverageThreshold: {
         global: {
