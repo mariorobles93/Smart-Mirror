@@ -6,3 +6,11 @@ for Open Weather Map API
  **/
 @import "weather-icons/weather-icons.min.css";
 @import "weather-icons/weather-icons-wind.min.css";
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body{
+  font-family: "Open Sans", sans-serif;
+  background-color: black;
+  color: white;
+}
