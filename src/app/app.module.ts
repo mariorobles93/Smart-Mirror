@@ -1,20 +1,23 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import {DateAndTimeComponent} from "./date-and-time/date-and-time.component";
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {DateAndTimeComponent} from "../components/date-and-time/date-and-time.component";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    DateAndTimeComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        DateAndTimeComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule
+    ],
+    providers: [HttpClientModule],
+    bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
