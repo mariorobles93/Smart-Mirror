@@ -92,14 +92,45 @@ describe('WeatherService', () => {
         expect(response).toEqual(mockedResponse);
 
         mockedData.wind.speed = 0;
-        mockedResponse.wind = {
-            ...mockedResponse.wind,
-            beaufortScale: 0,
-            speed: 0
+        mockedData.snow = {};
+        mockedData.rain = {};
+
+        let mockedData2: any = {
+            weather: [{
+                id: 1,
+                description: 'description'
+            }],
+            main: {
+                feels_like: 1
+            },
+            wind: {
+                speed: 0,
+                deg: 360
+            },
+            clouds: {
+                all: 0
+            }
+        };
+        let mockedResponse2: CurrentWeather = {
+            conditionId: 1,
+            description: 'description',
+            temperature: {
+                value: 1,
+                units: 'fahrenheit'
+            },
+            wind: {
+                speed: 0,
+                beaufortScale: 0,
+                direction: 360,
+                units: 'mph'
+            },
+            cloudCoverage: 0,
+            precipitation: null,
+            snow: null
         };
 
-        let response2 = service.transformResponseToCurrentWeather(mockedData, 'metric');
-        expect(response2).toEqual(mockedResponse);
+        let response2 = service.transformResponseToCurrentWeather(mockedData2, 'imperial');
+        expect(response2).toEqual(mockedResponse2);
 
     });
 
